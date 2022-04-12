@@ -68,6 +68,7 @@
     </main>
     <!--Sección Quienes somos-->
     <article class="container py-5 d-none d-md-block" id="quienesSomos">
+    <!--clases "d-none" y "d-md-block" causan que este elemento se oculte en pantallas más pequeñas que md-->
         <h3 class="text-center">¿QIÉNES SOMOS?</h3>
         <hr>
         <div class="row">
@@ -188,24 +189,26 @@
             <input type="text" class="form-control" id="exampleFormControlInput2" placeholder=""></input>
         </div>
         <div class="mb-3">
-            <label for="exampleFormControlTextarea2" class="form-label">Mensaje</label>
-            <textarea class="form-control" id="exampleFormControlTextarea2" rows="8"></textarea>
+            <label for="exampleFormControlTextarea1" class="form-label">Mensaje</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="8"></textarea>
         </div>
         <button type="button" class="btn btn-info text-white">Enviar</button>
     </section>
     <!--Sección Footer-->
     <footer class="bg-info">
         <div class="container px-5">
-            <div class="row py-4 px-5 align-middle">
+            <div class="row py-4 px-5">
                 <div class="col-6">
                     <h2 class="ps-5">VIAJES CHILE</h2>
                 </div>
-                <!--Idea: script que cambia el color del footer al poner el cursor sobre el icono de red social-->
                 <div class="col-6 text-end pt-2 pe-5">
-                    <a href="https://github.com"><i class="fa-brands fa-github-square fa-2xl pe-2"></i></a>
-                    <a href="https://linkedin.com"><i class="fa-brands fa-linkedin fa-2xl pe-2"></i></a>
-                    <a href="https://twitter.com"><i class="fa-brands fa-twitter-square fa-2xl pe-2"></i></a>
-                    <a href="https://facebook.com"><i class="fa-brands fa-facebook-square fa-2xl pe-2"></i></a>
+                    <!--al agregar data-bs-toggle="tooltip" permite usar tooltips-->
+                    <!--data-bs-placement determina la posición de tooltip-->
+                    <!--title da el título del tooltip-->
+                    <a href="https://github.com" data-bs-toggle="tooltip" data-bs-placement="left" title="GitHub"><i class="fa-brands fa-github-square fa-2xl pe-2"></i></a> 
+                    <a href="https://linkedin.com" data-bs-toggle="tooltip" data-bs-placement="top" title="LinkedIn"><i class="fa-brands fa-linkedin fa-2xl pe-2"></i></a>
+                    <a href="https://twitter.com" data-bs-toggle="tooltip" data-bs-placement="top" title="Twitter"><i class="fa-brands fa-twitter-square fa-2xl pe-2"></i></a>
+                    <a href="https://facebook.com" data-bs-toggle="tooltip" data-bs-placement="right" title="Facebook"><i class="fa-brands fa-facebook-square fa-2xl pe-2"></i></a> 
                 </div>
             </div>    
         </div>
